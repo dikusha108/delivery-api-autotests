@@ -1,0 +1,9 @@
+.idea
+allure-results
+target
+reports
+.DS_Store
+src/.DS_Store
+src/test/.DS_Store
+/target/
+.env

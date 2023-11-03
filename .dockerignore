@@ -1,0 +1,11 @@
+#COMMON IGNORES
+.git
+docker-compose*
+*.env*
+.gitignore
+.gitlab-ci*
+README.md
+
+#FOLDERS TO IGNORE
+scripts
+maven-container
