@@ -12,9 +12,9 @@ import java.util.Random;
 
 public class TestParams {
     private static Connection connectToDb() {
-        String url = "jdbc:firebirdsql://172.16.8.220:3050/stage?encoding=UTF8";
-        String username = "SYSDBA";
-        String password = "masterkey";
+        String url = getFirebirdUrl();
+        String username = getFirebirdUsername();
+        String password = getFirebirdPassword();
 
         try {
             return DriverManager.getConnection(url, username, password);
@@ -53,7 +53,7 @@ public class TestParams {
     private static String firebird_url = dotenv.get("FIREBIRD_URL");
     private static String firebird_username = dotenv.get("FIREBIRD_USERNAME");
     private static String firebird_password = dotenv.get("FIREBIRD_PASSWORD");
-    private static final String incorrect_token = "Bearer iKnZYvrhKaNZoZxo8wJx74QBxe0Ytnypsdfsdf";
+    private static final String incorrect_token = "Bearer qwe";
     private static final List<String> moscowAddresses = List.of(
             "г. Москва, Береговой проезд, 4, к3, стр5",
             "Москва, Дмитровское шоссе, д. 64 Б",
